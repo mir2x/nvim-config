@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter-textobjects",
-  event = "VeryLazy",
+  -- event = "VeryLazy",
   dependencies = { "nvim-treesitter/nvim-treesitter" },
   config = function()
     -- Attach to your existing treesitter config if present.

@@ -24,6 +24,7 @@ require("lazy").setup({
     { import = "plugins.ui" },
     { import = "plugins.editor" },
     { import = "plugins.treesitter" },
+    { import = "plugins.agent" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.

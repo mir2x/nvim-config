@@ -10,7 +10,7 @@ return {
         ["<C-v>"] = "actions.select_vsplit",   -- Open in vertical split
         ["<C-x>"] = "actions.select_split",    -- Open in horizontal split
         ["<C-t>"] = "actions.select_tab",      -- Open in new tab
-        ["<BS>"] = "actions.parent",           -- Go up one level
+        ["-"] = "actions.parent",              -- Go up one level
         ["_"] = "actions.open_cwd",            -- Open current working dir
         ["`"] = "actions.cd",                  -- Set Oil dir as cwd
         ["~"] = "actions.tcd",                 -- Set Oil dir as tab-local cwd
@@ -20,7 +20,7 @@ return {
       view_options = {
         show_hidden = true,
       },
+      vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 		})
-		vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 	end
 }
